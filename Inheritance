@@ -56,3 +56,22 @@ System.out.print("Department:");
 System.out.println(dept);
 }
 }
+public class Program4
+{
+public static void main(String[] args)
+
+{
+char officer_name[]={'I','r','i','n'};
+char officer_phn[]={'1','2','3','4','5','6','7','8','9','0'};
+char officer_address[]={'A','B','C',' ','h','o','u','s','e'};
+char specialization[]={'I','T'};
+char manager_name[]={'D','o','m','i','n','i','c'};
+char manager_phn[]={'0','9','8','7','6','5','4','3','2','1'};
+char manager_address[]={'1','2','3',' ','h','o','u','s','e'};
+char department[]={'H','R'};
+Officer o=new Officer(officer_name,25,officer_phn,officer_address,25000,specialization);
+System.out.println();
+Manager m=new
+Manager(manager_name,35,manager_phn,manager_address,45000,department);
+}
+}
