@@ -1,0 +1,58 @@
+class Employee
+{
+public char name[];
+public int age;
+public char phn[];
+public char address[];
+public long salary;
+Employee(char name[],int age,char phn[],char address[],long salary)
+
+{
+this.name=name;
+this.age=age;
+this.phn=phn;
+this.address=address;
+this.salary=salary;
+}
+protected void printSalary()
+{
+System.out.println("Salary:"+salary);
+}
+protected void print_details()
+{
+System.out.print("Name:");
+System.out.println(name);
+System.out.println("Age:"+age);
+System.out.print("Phone number:");
+System.out.println(phn);
+System.out.print("Address:");
+System.out.println(address);
+printSalary();
+}
+}
+class Officer extends Employee
+{
+protected char specialization[];
+Officer(char name[],int age,char phn[],char address[],long salary,char specialization[])
+{
+super(name,age,phn,address,salary);
+this.specialization=specialization;
+System.out.println("Officer Details:");
+super.print_details();
+System.out.print("Specialization:");
+System.out.println(specialization);
+}
+}
+class Manager extends Employee
+{
+private char dept[];
+Manager(char name[],int age,char phn[],char address[],long salary,char dept[])
+{
+super(name,age,phn,address,salary);
+this.dept=dept;
+System.out.println("Manager Details:");
+super.print_details();
+System.out.print("Department:");
+System.out.println(dept);
+}
+}
