@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.StringTokenizer;
+public class Program9st
+{
+public static void main(String[] args)
+{
+int sum=0;
+try
+{
+BufferedReader r=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the integers:");
+String input=r.readLine();
+StringTokenizer st=new StringTokenizer(input);
+while(st.hasMoreTokens())
+{
+String token=st.nextToken();
+System.out.println(token);
+sum=sum+ Integer.parseInt(token);
+}
+System.out.println("Sum :"+sum);
+}
+catch(Exception e)
+{
+System.out.println("Error occcured");
+}
+}
+}
